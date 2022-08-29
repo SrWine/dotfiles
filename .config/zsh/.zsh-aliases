@@ -1,0 +1,88 @@
+#!/bin/sh
+
+# shortcuts
+alias ls='exa --icons -a --group-directories-first'
+alias e='exit'
+alias s='source'
+alias z='zsh'
+alias r='ranger'
+alias ch='chmod +x'
+alias grep='rg'
+alias c='clear'
+alias nv='nvim'
+alias lv='lvim'
+alias hx='helix'
+alias sx='sxiv'
+alias sn='sudo nvim'
+alias nz='nvim $ZDOTDIR/.zshrc'
+alias sz='exec zsh'
+alias cz='cd $ZDOTDIR'
+alias na='nvim $ZDOTDIR/.zsh-aliases'
+alias sa='source $ZDOTDIR/.zsh-aliases'
+alias nf='nvim $ZDOTDIR/.zsh-functions'
+alias sf='source $ZDOTDIR/.zsh-functions'
+alias ns='nvim ~/.config/sxhkd/sxhkdrc'
+alias nb='nvim ~/.config/bspwm/bspwmrc'
+alias nn='nvim ~/.config/nimdow/config.toml'
+alias cb='cd ~/.config/bspwmbar/'
+alias bu='brightnessctl s 233'
+alias bd='brightnessctl s 47'
+alias pf='poweroff'
+alias rb='reboot'
+alias run='setsid -f'
+alias uv='sudo virsh net-start default'
+alias un='sudo systemctl restart NetworkManager.service'
+
+# package management
+alias pcs='pacman -Ss' 
+alias prn='paru -S'
+alias prm='sudo paru -R' 
+alias prs='paru -Ss' 
+alias prp='paru && paru -Sua'
+
+alias ul='sudo rm /var/lib/pacman/db.lck'
+alias cleanup='sudo paru -Rns $(paru -Qtdq)'
+alias mirror='sudo rate-mirrors --protocol=https --allow-root --save=/etc/pacman.d/mirrorlist arch'
+
+alias fltn='sudo flatpak install'
+alias fltr='sudo flatpak remove'
+alias flts='flatpak search'
+alias fltp='sudo flatpak update'
+
+# Xresources
+alias use="xrdb merge"
+alias load="kill -USR1 $(pidof st)"
+alias rel="xrdb merge ~/.Xresources-onedark && kill -USR1 $(pidof st)"
+
+# dwm shortcuts
+alias nc='nvim config.def.h'
+alias np='nvim patches.def.h'
+alias nd='nvim ~/.config/dwm/config.def.h'
+alias rc='rm -rf config.h && sudo make install'
+alias cs='cd ~/.local/share/dwm'
+alias dc='cd ~/.config/dwm'
+alias mk='sudo make install'
+
+# ytp-dl
+alias yta="yt-dlp --extract-audio --audio-format mp3 "
+alias ytv="yt-dlp -f 136+bestaudio "
+alias rdv='yt-dlp dash-video_1916399 '
+
+
+# cd'ing
+alias gd='cd ~/documents/godot'
+alias cr='cd ~/repos'
+alias bn='cd ~/.local/bin'
+alias shr='cd ~/.local/share'
+alias ct='cd ~/temp/'
+alias cc='cd ~/.config/'
+alias cn='cd ~/.config/nvim'
+
+# git
+alias cl='git clone'
+alias pull='git pull'
+alias checkout='git checkout'
+alias commit='git commit'
+alias push='git push'
+alias add='git add . && commit -m'
+alias status='git status'
