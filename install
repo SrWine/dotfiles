@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This is a simple POSIX complint for installing & configuring software I use.
+# This is a simple POSIX complint script for installing & configuring software I use.
 
 DOTDIR="$HOME/dotfiles"
 set -- dmenu dwm st
