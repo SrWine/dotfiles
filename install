@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# This is a simple POSIX complint for installing & configuring software I use.
+
+DOTDIR="$HOME/dotfiles"
+set -- dmenu dwm st
+
+echo "creating symbolic links..."
+ln -s "$DOTDIR"/.config/* ~/.config/
+ln -s "$DOTDIR"/.local/* ~/.local/
+ln -s "$DOTDIR"/.xprofile ~/.xprofile
+ln -s "$DOTDIR"/.Xresources-onedark ~/.Xresources-onedark
+
+echo "cloning dwm and st..."
+git clone https://github.com/HassanAbdullah3/dwm ~/.config/dwm
+git clone https://github.com/siduck/st ~/.config/st
+
+# a for loop for compiling suckless software
+echo "building suckless utilities..."
+for i in "$@"; do
+  cd ~/.config/$i || exit
+  sudo make install
+done

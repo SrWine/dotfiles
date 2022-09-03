@@ -23,6 +23,7 @@ set scrolloff 10
 # colors and icons
 set icons
 set colors
+set preview
 
 # use enter for shell commands
 map <enter> shell
