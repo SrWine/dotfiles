@@ -11,13 +11,31 @@ ln -s "$DOTDIR"/.local/* ~/.local/
 ln -s "$DOTDIR"/.xprofile ~/.xprofile
 ln -s "$DOTDIR"/.Xresources-onedark ~/.Xresources-onedark
 
+echo "installing paru aur helper..."
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git ~/paru
+cd ~/paru || exit
+makepkg -si
+
+echo "installing some software..."
+paru -S - < "$DOTDIR"/packages.txt
+
 echo "cloning dwm and st..."
 git clone https://github.com/HassanAbdullah3/dwm ~/.config/dwm
 git clone https://github.com/siduck/st ~/.config/st
 
-# a for loop for compiling suckless software
 echo "building suckless utilities..."
 for i in "$@"; do
   cd ~/.config/$i || exit
   sudo make install
 done
+
+echo "enabling touchpad..."
+echo 'Section "InputClass"
+    Identifier "touchpad"
+    Driver "synaptics"
+    MatchIsTouchpad "on"
+        Option "TapButton1" "1"
+        Option "TapButton2" "3"
+        Option "TapButton3" "2"
+EndSection' > /etc/X11/xorg.conf.d/70-synaptics.conf
