@@ -35,8 +35,6 @@ bc ()
       *.py)   python $1 ;;
       *.lua)  lua $1    ;;
       *.go)   go run $1 ;;
-      *.c)    compile_c $1;;
-      *.cpp)  compile_cpp $1;;
       *)           echo "'$1' cannot be extracted via ex()" ;;
     esac
   else
@@ -44,13 +42,9 @@ bc ()
   fi
 }
 
-compile_c () {
-  clang $1
-  sleep 0.1
-  ./a.out
+cmc () {
+  cc -o main main.c && ./main
 }
-compile_cpp () {
-  clang++ $1
-  sleep 0.1
-  ./a.out
+cmcpp () {
+  clang++ -o main main.cpp && ./main
 }

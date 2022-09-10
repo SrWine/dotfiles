@@ -75,7 +75,6 @@ alias cr='cd ~/repos'
 alias bn='cd ~/.local/bin'
 alias shr='cd ~/.local/share'
 alias ct='cd ~/temp/'
-alias cc='cd ~/.config/'
 alias cn='cd ~/.config/nvim'
 
 # git
