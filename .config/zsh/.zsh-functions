@@ -46,5 +46,5 @@ cmc () {
   cc -o main main.c && ./main
 }
 cmcpp () {
-  clang++ -o main main.cpp && ./main
+  g++ -o main main.cpp && ./main
 }

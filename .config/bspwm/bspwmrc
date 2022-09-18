@@ -18,5 +18,9 @@ bspc rule -a mpv state=floating
 bspc rule -a virt-manager desktop=3
 
 # Autostart
-feh --bg-fill ~/pictures/wallpapers/onedark.png &
+feh --bg-fill ~/pictures/wallpapers/gritty.png &
+xset r rate 210 40
+setxkbmap -layout us,ar -option grp:alt_shift_toggle
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# nm-applet --indecator &
 bspwmbar
