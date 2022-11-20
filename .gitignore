@@ -1,1 +1,6 @@
-.config/zsh/.zsh_history
+zsh/.config/zsh/.zsh_history
+zsh/.config/zsh/.p10k.zsh
+zsh/.config/zsh/.p10k.zsh.zwc
+zsh/.config/zsh/.zshenv
+zsh/.config/zsh/.zshrc
+scripts/.local/bin/*

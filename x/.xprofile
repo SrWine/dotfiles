@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # key bindings
 # pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -7,7 +9,7 @@
 # Environment variables set everywhere
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="chromium"
 
 # XDG Paths
 export XDG_CONFIG_HOME="$HOME/.config"
