@@ -18,11 +18,12 @@ alias sx='sxiv'
 alias sn='sudo nvim'
 alias nz='nvim $ZDOTDIR/.zshrc'
 alias sz='exec zsh'
+alias sb='source ~/.bashrc'
 alias cz='cd $ZDOTDIR'
-alias na='nvim $ZDOTDIR/.zsh-aliases'
-alias sa='source $ZDOTDIR/.zsh-aliases'
-alias nf='nvim $ZDOTDIR/.zsh-functions'
-alias sf='source $ZDOTDIR/.zsh-functions'
+alias na='nvim ~/.aliases'
+alias sa='source ~/.aliases'
+alias nf='nvim ~/.config/fish/config.fish'
+alias sf='source ~/.config/fish/config.fish'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nb='nvim ~/.config/bspwm/bspwmrc'
 alias nn='nvim ~/.config/nimdow/config.toml'
@@ -36,10 +37,19 @@ alias uv='sudo virsh net-start default'
 alias un='sudo systemctl restart NetworkManager.service'
 
 # package management
+
+# apt
 alias an='sudo apt install'
 alias ar='sudo apt remove' 
 alias as='apt search' 
 alias ap='sudo apt update && sudo apt upgrade'
+
+#xbps
+alias xi='sudo xbps-install -S'
+alias xr='sudo xbps-remove -Ro'
+alias xs='xbps-query -Rs'
+alias xu='sudo xbps-install -Su'
+alias kr='sudo vkpurge rm all'
 
 alias ul='sudo rm /var/lib/dpkg/lock-frontend'
 alias cleanup='sudo paru -Rns $(paru -Qtdq)'
@@ -85,4 +95,5 @@ alias checkout='git checkout'
 alias commit='git commit'
 alias push='git push'
 alias add='git add . && commit -m'
-alias status='git status'
+#alias status='git status'
+
