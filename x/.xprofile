@@ -24,7 +24,7 @@ setxkbmap -option caps:escape
 setxkbmap -option caps:swapescape
 
 # override style for QT applications
-export QT_STYLE_OVERRIDE=gtk
+#export QT_STYLE_OVERRIDE=gtk
 
 # switching keyboard layout
 # setxkbmap -layout us,ar -option grp:alt_shift_toggle
@@ -33,7 +33,7 @@ export QT_STYLE_OVERRIDE=gtk
 # /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Xresources
-xrdb merge ~/.Xresources-onedark
+#xrdb merge ~/.Xresources-onedark
 
 # system trays
 # nm-applet &

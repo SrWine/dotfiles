@@ -9,11 +9,11 @@ alias r='ranger'
 alias ch='chmod +x'
 alias grep='rg'
 alias python='python3'
-alias bat='batcat'
+alias bat='bat'
 alias c='clear'
 alias nv='nvim'
 alias lv='lvim'
-alias hx='helix'
+#alias hx='helix'
 alias sx='sxiv'
 alias sn='sudo nvim'
 alias nz='nvim $ZDOTDIR/.zshrc'
@@ -24,6 +24,7 @@ alias na='nvim ~/.aliases'
 alias sa='source ~/.aliases'
 alias nf='nvim ~/.config/fish/config.fish'
 alias sf='source ~/.config/fish/config.fish'
+alias cf='cd ~/.config/fish'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nb='nvim ~/.config/bspwm/bspwmrc'
 alias nn='nvim ~/.config/nimdow/config.toml'
@@ -45,14 +46,14 @@ alias as='apt search'
 alias ap='sudo apt update && sudo apt upgrade'
 
 #xbps
-alias xi='sudo xbps-install -S'
+alias xi='sudo xbps-install -Sy'
 alias xr='sudo xbps-remove -Ro'
 alias xs='xbps-query -Rs'
 alias xu='sudo xbps-install -Su'
 alias kr='sudo vkpurge rm all'
 
 alias ul='sudo rm /var/lib/dpkg/lock-frontend'
-alias cleanup='sudo paru -Rns $(paru -Qtdq)'
+#alias cleanup='sudo paru -Rns $(paru -Qtdq)'
 alias mirror='sudo rate-mirrors --protocol=https --allow-root --save=/etc/pacman.d/mirrorlist arch'
 
 alias fltn='sudo flatpak install'
@@ -62,8 +63,8 @@ alias fltp='sudo flatpak update'
 
 # Xresources
 alias use="xrdb merge"
-alias load="kill -USR1 $(pidof st)"
-alias rel="xrdb merge ~/.Xresources-onedark && kill -USR1 $(pidof st)"
+#alias load="kill -USR1 $(pidof st)"
+#alias rel="xrdb merge ~/.Xresources-onedark && kill -USR1 $(pidof st)"
 
 # dwm shortcuts
 alias nc='nvim config.def.h'
