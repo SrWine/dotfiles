@@ -12,9 +12,10 @@ function fish_prompt
     " "
 end
 
-fish_add_path /home/hassan/.local/bin
-fish_add_path /home/hassan/opt/*
-fish_add_path /home/hassan/repos/Odin
-
+fish_add_path /home/wine/.local/bin
+fish_add_path /home/wine/opt/*
+#fish_add_path /home/hassan/repos/Odin
+fish_add_path /home/wine/opt/go/bin
 
 source ~/.aliases
+
