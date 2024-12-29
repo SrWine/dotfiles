@@ -4,11 +4,11 @@
 # pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Speedy keys
-# xset r rate 210 40
+xset r rate 210 40
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export TERMINAL="xfce4-terminal"
+export TERMINAL="qterminal"
 export BROWSER="firefox"
 
 # XDG Paths

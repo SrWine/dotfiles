@@ -12,23 +12,23 @@ alias python='python3'
 alias bat='batcat'
 alias fd='fdfind'
 alias c='clear'
-alias nv='~/opt/nvim/nvim.appimage'
+alias nv='~/opt/nvim/nvim'
 alias lv='lvim'
 #alias hx='helix'
 alias sx='sxiv'
-alias sn='sudo ~/opt/nvim/nvim.appimage'
-alias nz='~/opt/nvim/nvim.appimage $ZDOTDIR/.zshrc'
+alias sn='sudo ~/opt/nvim/nvim'
+alias nz='~/opt/nvim/nvim $ZDOTDIR/.zshrc'
 alias sz='exec zsh'
 alias sb='source ~/.bashrc'
 alias cz='cd $ZDOTDIR'
-alias na='~/opt/nvim/nvim.appimage ~/.aliases'
+alias na='~/opt/nvim/nvim ~/.aliases'
 alias sa='source ~/.aliases'
-alias nf='~/opt/nvim/nvim.appimage ~/.config/fish/config.fish'
+alias nf='~/opt/nvim/nvim ~/.config/fish/config.fish'
 alias sf='source ~/.config/fish/config.fish'
 alias cf='cd ~/.config/fish'
-alias ns='~/opt/nvim/nvim.appimage ~/.config/sxhkd/sxhkdrc'
-alias nb='~/opt/nvim/nvim.appimage ~/.config/bspwm/bspwmrc'
-alias nn='~/opt/nvim/nvim.appimage ~/.config/nimdow/config.toml'
+alias ns='~/opt/nvim/nvim ~/.config/sxhkd/sxhkdrc'
+alias nb='~/opt/nvim/nvim ~/.config/bspwm/bspwmrc'
+alias nn='~/opt/nvim/nvim ~/.config/nimdow/config.toml'
 alias cb='cd ~/.config/bspwmbar/'
 alias bu='brightnessctl s 233'
 alias bd='brightnessctl s 47'
@@ -37,16 +37,17 @@ alias rb='systemctl reboot'
 alias run='setsid -f'
 alias uv='sudo virsh net-start default'
 alias un='sudo systemctl restart NetworkManager.service'
+alias scr='scrcpy -Sw -m 1366'
 
-# package management
+## package management ##
 
 # apt
 alias an='sudo apt install'
-alias ar='sudo apt remove' 
+alias ar='sudo apt purge --autoremove' 
 alias as='apt search' 
 alias ap='sudo apt update && sudo apt upgrade'
 
-#xbps
+# xbps
 alias xi='sudo xbps-install -Sy'
 alias xr='sudo xbps-remove -Ro'
 alias xs='xbps-query -Rs'
@@ -63,6 +64,7 @@ alias ul='sudo rm /var/lib/dpkg/lock-frontend'
 #alias cleanup='sudo paru -Rns $(paru -Qtdq)'
 alias mirror='sudo rate-mirrors --protocol=https --allow-root --save=/etc/pacman.d/mirrorlist arch'
 
+# flatpak
 alias fltn='sudo flatpak install'
 alias fltr='sudo flatpak remove'
 alias flts='flatpak search'
@@ -74,16 +76,16 @@ alias use="xrdb merge"
 #alias rel="xrdb merge ~/.Xresources-onedark && kill -USR1 $(pidof st)"
 
 # dwm shortcuts
-alias nc='~/opt/nvim/nvim.appimage config.def.h'
-alias np='~/opt/nvim/nvim.appimage patches.def.h'
-alias nd='~/opt/nvim/nvim.appimage ~/.config/dwm/config.def.h'
+alias nc='~/opt/nvim/nvim config.def.h'
+alias np='~/opt/nvim/nvim patches.def.h'
+alias nd='~/opt/nvim/nvim ~/.config/dwm/config.def.h'
 alias rc='rm -rf config.h && sudo make install'
 alias cs='cd ~/.local/share/dwm'
 alias dc='cd ~/.config/dwm'
 alias mk='sudo make install'
 
 # ytp-dl
-alias yta="yt-dlp --extract-audio --audio-format mp3 "
+alias yta="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail"
 alias ytv="yt-dlp -f 136+bestaudio "
 alias rdv='yt-dlp dash-video_1916399 '
 
@@ -94,7 +96,7 @@ alias cr='cd ~/repos'
 alias bn='cd ~/.local/bin'
 alias shr='cd ~/.local/share'
 alias ct='cd ~/temp/'
-alias cn='cd ~/.config/~/opt/nvim/nvim.appimage'
+alias cn='cd ~/.config/~/opt/nvim/nvim'
 
 # git
 alias cl='git clone --depth 1'

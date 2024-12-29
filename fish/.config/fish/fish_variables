@@ -29,4 +29,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/wine/opt/android\x2dsdk\x1e/home/wine/opt/aseprite\x1e/home/wine/\x2elocal/bin\x1e/home/wine/opt/godot\x1e/home/wine/opt/go/bin\x1e/home/wine/opt/go\x1e/home/wine/opt/nvim\x1e/home/hassan/\x2elocal/bin\x1e/home/hassan/opt/hello\x2dworld\x1e/home/hassan/repos/Odin
+SETUVAR fish_user_paths:/home/wine/opt/kdenlive\x1e/home/wine/opt/REAPER\x1e/home/wine/opt/go\x2dold\x1e/home/wine/opt/olive\x1e/home/wine/opt/vita3k\x1e/home/wine/opt/dwarfs\x1e/home/wine/opt/pixelorama\x1e/home/wine/opt/heroic\x1e/home/wine/opt/es\x2dde\x1e/home/wine/opt/UltimMC\x1e/home/wine/opt/pcsx2\x1e/home/wine/opt/retroarch\x1e/home/wine/opt/android\x2dsdk\x1e/home/wine/opt/aseprite\x1e/home/wine/\x2elocal/bin\x1e/home/wine/opt/godot\x1e/home/wine/opt/go/bin\x1e/home/wine/opt/go\x1e/home/wine/opt/nvim\x1e/home/hassan/\x2elocal/bin\x1e/home/hassan/opt/hello\x2dworld\x1e/home/hassan/repos/Odin
